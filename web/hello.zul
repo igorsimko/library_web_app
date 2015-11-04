@@ -1,0 +1,18 @@
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+
+<window>
+    <style src="/widgets/grid/simple/style.css" />
+    <div apply="org.zkoss.bind.BindComposer"
+            viewModel="@id('vm') @init('com.librarywebapp.vm.HelloVM')">
+
+
+                <label value="@load(vm.ahoj)" />
+
+
+    </div>
+
+    </window>
+</zk>
